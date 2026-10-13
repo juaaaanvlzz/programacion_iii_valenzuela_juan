@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="/registro">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" placeholder="Apellido">
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" placeholder="Correo electrónico">
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" placeholder="Contraseña">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" placeholder="Edad">
+        <br>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
+        
+        <br>
+        <label for="genero">Género:</label>
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="femenino"> Femenino
+        <input type="radio" name="genero" value="otro"> Otro
+        <br>
+        <button type="submit">Enviar</button>
+
+        <br>
+        <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
+
+    </form>
+</body>
+</html>
