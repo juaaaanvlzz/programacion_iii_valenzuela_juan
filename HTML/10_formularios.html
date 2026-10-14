@@ -7,6 +7,51 @@
 </head>
 <body>
     <form action="/registro">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" placeholder="Nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input type="text" name="apellido" placeholder="Apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo electrónico:</label></td>
+                <td><input type="email" name="correo" placeholder="Correo electrónico"></td>
+            </tr>
+            <tr>
+                <td><label for="contraseña">Contraseña:</label></td>
+                <td><input type="password" name="contraseña" placeholder="Contraseña"></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" name="edad" placeholder="Edad"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
+                <td><input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento"></td>
+            </tr>
+
+            <tr>
+                <td><label for="genero">Género:</label></td>
+                <td>
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <input type="radio" name="genero" value="otro"> Otro
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
+                </td>
+            </tr>
+        </table>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" placeholder="Nombre">
         <br>
@@ -20,7 +65,7 @@
         <input type="password" name="contraseña" placeholder="Contraseña">
         <br>
         <label for="edad">Edad:</label>
-        <input type="number" name="edad" placeholder="Edad">
+        <input type="number" name="edad" placeholder="Edad" min="0" max="120">
         <br>
         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
         <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
