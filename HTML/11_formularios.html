@@ -1,102 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de misiones</title>
 </head>
 <body>
-    <form action="/registro">
-        <table>
-            <tr>
-                <td><label for="nombre">Nombre:</label></td>
-                <td><input type="text" name="nombre" placeholder="Nombre"></td>
-            </tr>
-            <tr>
-                <td><label for="apellido">Apellido:</label></td>
-                <td><input type="text" name="apellido" placeholder="Apellido"></td>
-            </tr>
-            <tr>
-                <td><label for="correo">Correo electrónico:</label></td>
-                <td><input type="email" name="correo" placeholder="Correo electrónico"></td>
-            </tr>
-            <tr>
-                <td><label for="contraseña">Contraseña:</label></td>
-                <td><input type="password" name="contraseña" placeholder="Contraseña"></td>
-            </tr>
-            <tr>
-                <td><label for="edad">Edad:</label></td>
-                <td><input type="number" name="edad" placeholder="Edad"></td>
-            </tr>
-            <tr>
-                <td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
-                <td><input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento"></td>
-            </tr>
+    <header>
+        <h1>Centro de Misiones Galácticas</h1>
+        <p>Registro de operaciones</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="registro-misiones">
+            <fieldset>
+                <legend>Información de la misión</legend>
+                <label for="codigo">
+                    Código de misión:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="MIS-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="responsable">
+                    Responsable:
+                </label>
+                <select id="responsable"
+                        name="responsable"
+                        required>
+                    <option value="">
+                        Selecciona un personaje
+                    </option>
+                    <option value="luke">
+                        Luke Skywalker
+                    </option>
+                    <option value="leia">
+                        Leia Organa
+                    </option>
+                    <option value="han">
+                        Han Solo
+                    </option>
+                </select>
+                <br><br>
+                <label for="planeta">
+                    Planeta de destino:
+                </label>
+                <input type="text"
+                       id="planeta"
+                       name="planeta"
+                       placeholder="Ej. Dagobah"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la misión:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Prioridad de la misión:</p>
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta</label>
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
 
-            <tr>
-                <td><label for="genero">Género:</label></td>
-                <td>
-                    <input type="radio" name="genero" value="masculino"> Masculino
-                    <input type="radio" name="genero" value="femenino"> Femenino
-                    <input type="radio" name="genero" value="otro"> Otro
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit">Enviar</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
-                </td>
-            </tr>
-        </table>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Nombre">
-        <br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Apellido">
-        <br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" name="correo" placeholder="Correo electrónico">
-        <br>
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña" placeholder="Contraseña">
-        <br>
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" placeholder="Edad">
-        <br>
-        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
-
-        <br>
-        <label for="genero">Género:</label>
-        <input type="radio" name="genero" value="masculino"> Masculino
-        <input type="radio" name="genero" value="femenino"> Femenino
-        <input type="radio" name="genero" value="otro"> Otro
-        <br>
-        <button type="submit">Enviar</button>
-
-        <br>
-        <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
-
-    </form>
-
-    <br>
-    <label for="comentario">Comentario:</label>
-    <br>
-    <textarea id="comentario" rows="4" cols="40" placeholder="Escribe algo..."></textarea>
-    <br>
-    <button type="button" onclick="mostrarTexto()">Mostrar</button>
-    <br>
-    <label id="resultado"></label>
-
-    <script>
-        function mostrarTexto() {
-            let texto = document.getElementById("comentario").value;
-            document.getElementById("resultado").textContent = texto;
-        }
-    </script>
+                <label for="media">Media</label>
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+                <label for="baja">Baja</label>
+                <br><br>
+                <label for="riesgo">
+                    Nivel de riesgo (1 a 10):
+                </label>
+                <input type="number"
+                       id="riesgo"
+                       name="riesgo"
+                       min="1"
+                       max="10"
+                       value="5">
+                <p>Recursos necesarios:</p>
+                <input type="checkbox"
+                       id="nave"
+                       name="recursos"
+                       value="nave">
+                <label for="nave">
+                    Nave espacial
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="droides"
+                       name="recursos"
+                       value="droides">
+                <label for="droides">
+                    Droides
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="equipo"
+                       name="recursos"
+                       value="equipo">
+                <label for="equipo">
+                    Equipo de comunicación
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Descripción de la misión</legend>
+                <label for="descripcion">
+                    Objetivo principal:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe la misión..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Registrar misión
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Centro Galáctico - 2026
+            </small>
+        </p>
+    </footer>
 </body>
 </html>

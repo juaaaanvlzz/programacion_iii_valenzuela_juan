@@ -6,81 +6,130 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="/registro">
+    <form action="/registro" method="post">
         <table>
             <tr>
-                <td><label for="nombre">Nombre:</label></td>
-                <td><input type="text" name="nombre" placeholder="Nombre"></td>
-            </tr>
-            <tr>
-                <td><label for="apellido">Apellido:</label></td>
-                <td><input type="text" name="apellido" placeholder="Apellido"></td>
-            </tr>
-            <tr>
-                <td><label for="correo">Correo electrónico:</label></td>
-                <td><input type="email" name="correo" placeholder="Correo electrónico"></td>
-            </tr>
-            <tr>
-                <td><label for="contraseña">Contraseña:</label></td>
-                <td><input type="password" name="contraseña" placeholder="Contraseña"></td>
-            </tr>
-            <tr>
-                <td><label for="edad">Edad:</label></td>
-                <td><input type="number" name="edad" placeholder="Edad"></td>
-            </tr>
-            <tr>
-                <td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
-                <td><input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento"></td>
-            </tr>
-
-            <tr>
-                <td><label for="genero">Género:</label></td>
                 <td>
-                    <input type="radio" name="genero" value="masculino"> Masculino
-                    <input type="radio" name="genero" value="femenino"> Femenino
-                    <input type="radio" name="genero" value="otro"> Otro
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Luke Skywalker">
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <button type="submit">Enviar</button>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="password_confirm">Confirmar Password</label><br>
+                    <input type="password" id="password_confirm" name="password_confirm">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
+                <td>
+                    <label for="edad">Edad</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+                <td>
+                    <label for="nivel">Nivel de la Fuerza</label><br>
+                    <input 
+                        type="number" 
+                        id="nivel" 
+                        name="nivel" 
+                        min="10" 
+                        max="100" 
+                        value="50" 
+                        step="5"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccione tu bando:</p>
+                    <input type="radio" id="jedi" name="bando" value="jedi">
+                    <label for="jedi">Jedi</label>
+                    <input type="radio" id="sith" name="bando" value="sith">
+                    <label for="jedi">Sith</label>
+                </td>
+                <td>
+                    <p>Seleccione tus habilidades:</p><br>
+                    <input 
+                        type="checkbox" 
+                        id="fuerza" 
+                        name="habilidades" 
+                        value="fuerza"
+                    >
+                    <label for="feurza">Uso de la Fuerza</label><br>
+                    <input 
+                        type="checkbox" 
+                        id="sable" 
+                        name="habilidades" 
+                        value="sable"
+                    >
+                    <label for="sable">Uso de la Sable</label><br>
+                    <input 
+                        type="checkbox" 
+                        id="levitar" 
+                        name="habilidades" 
+                        value="levitar"
+                    >
+                    <label for="levitar">Levitar</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Planeta de Origen</label><br>
+                    <select id="planeta" name="planeta" required>
+                        <option value="">
+                            Selecciona un Planeta
+                        </option>
+                        <option value="tatooine">
+                            Tatooine
+                        </option>
+                        <option value="coruscant">
+                            Coruscant
+                        </option>
+                        <option value="naboo">
+                            Naboo
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="edad">Droide</label><br>
+                    <select id="droide" name="droide" multiple size="2">
+                        <option value="" selected>
+                            Selecciona un Droide
+                        </option>
+                        <option value="c3po">
+                            C3PO
+                        </option>
+                        <option value="bb8">
+                            BB8
+                        </option>
+                        <option value="naboo">
+                            R2D2
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="misiones">Misiones</label><br>
+                        <input type="number" id="misiones" name="misiones"><br>
+                        <label for="vuelos">Vuelos</label><br>
+                        <input type="number" id="vuelos" name="vuelos">
+                    </fieldset>
                 </td>
             </tr>
         </table>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Nombre">
-        <br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Apellido">
-        <br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" name="correo" placeholder="Correo electrónico">
-        <br>
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña" placeholder="Contraseña">
-        <br>
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" placeholder="Edad" min="0" max="120">
-        <br>
-        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
-        
-        <br>
-        <label for="genero">Género:</label>
-        <input type="radio" name="genero" value="masculino"> Masculino
-        <input type="radio" name="genero" value="femenino"> Femenino
-        <input type="radio" name="genero" value="otro"> Otro
-        <br>
+
         <button type="submit">Enviar</button>
-
-        <br>
-        <input type="checkbox" name="terminos" value="aceptar"> Acepto los términos y condiciones
-
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
