@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Barbería Vlzz | Reserva de citas</title>
+</head>
+<body>
+    <header>
+        <h1>Barbería Vlzz</h1>
+        <p>Reserva de citas</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="reserva-citas">
+            <fieldset>
+                <legend>Información de la cita</legend>
+                <label for="codigo">
+                    Código de reserva:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="RES-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="barbero">
+                    Barbero:
+                </label>
+                <select id="barbero"
+                        name="barbero"
+                        required>
+                    <option value="">
+                        Selecciona un barbero
+                    </option>
+                    <option value="juan">
+                        Juan
+                    </option>
+                    <option value="jostyn">
+                        Jostyn
+                    </option>
+                    <option value="mateo">
+                        Mateo
+                    </option>
+                </select>
+                <br><br>
+                <label for="cliente">
+                    Nombre del cliente:
+                </label>
+                <input type="text"
+                       id="cliente"
+                       name="cliente"
+                       placeholder="Ej. Juan Pérez"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la cita:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Turno de la cita:</p>
+                <input type="radio"
+                       id="manana"
+                       name="turno"
+                       value="manana"
+                       required>
+                <label for="manana">Mañana</label>
+                <input type="radio"
+                       id="tarde"
+                       name="turno"
+                       value="tarde">
+
+                <label for="tarde">Tarde</label>
+                <input type="radio"
+                       id="noche"
+                       name="turno"
+                       value="noche">
+                <label for="noche">Noche</label>
+                <br><br>
+                <label for="personas">
+                    Número de personas (1 a 10):
+                </label>
+                <input type="number"
+                       id="personas"
+                       name="personas"
+                       min="1"
+                       max="10"
+                       value="1">
+                <p>Extras:</p>
+                <input type="checkbox"
+                       id="lavado"
+                       name="extras"
+                       value="lavado">
+                <label for="lavado">
+                    Lavado de cabello
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="mascarilla"
+                       name="extras"
+                       value="mascarilla">
+                <label for="mascarilla">
+                    Mascarilla facial
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="toalla"
+                       name="extras"
+                       value="toalla">
+                <label for="toalla">
+                    Toalla caliente
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Descripción del corte</legend>
+                <label for="descripcion">
+                    Estilo deseado:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el corte que deseas..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Reservar cita
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Barbería Vlzz - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

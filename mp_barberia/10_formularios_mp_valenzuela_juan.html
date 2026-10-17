@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Vlzz | Registro de clientes</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="password_confirm">Confirmar Password</label><br>
+                    <input type="password" id="password_confirm" name="password_confirm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+                <td>
+                    <label for="presupuesto">Presupuesto ($)</label><br>
+                    <input
+                        type="number"
+                        id="presupuesto"
+                        name="presupuesto"
+                        min="5"
+                        max="50"
+                        value="10"
+                        step="5"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccione tu tipo de corte:</p>
+                    <input type="radio" id="fade" name="corte" value="fade">
+                    <label for="fade">Fade</label>
+                    <input type="radio" id="clasico" name="corte" value="clasico">
+                    <label for="clasico">Clásico</label>
+                </td>
+                <td>
+                    <p>Seleccione servicios adicionales:</p><br>
+                    <input
+                        type="checkbox"
+                        id="barba"
+                        name="servicios"
+                        value="barba"
+                    >
+                    <label for="barba">Arreglo de barba</label><br>
+                    <input
+                        type="checkbox"
+                        id="cejas"
+                        name="servicios"
+                        value="cejas"
+                    >
+                    <label for="cejas">Perfilado de cejas</label><br>
+                    <input
+                        type="checkbox"
+                        id="lavado"
+                        name="servicios"
+                        value="lavado"
+                    >
+                    <label for="lavado">Lavado de cabello</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sucursal">Sucursal</label><br>
+                    <select id="sucursal" name="sucursal" required>
+                        <option value="">
+                            Selecciona una sucursal
+                        </option>
+                        <option value="norte">
+                            Quito Norte
+                        </option>
+                        <option value="centro">
+                            Quito Centro
+                        </option>
+                        <option value="sur">
+                            Quito Sur
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="barbero">Barbero</label><br>
+                    <select id="barbero" name="barbero" multiple size="2">
+                        <option value="" selected>
+                            Selecciona un barbero
+                        </option>
+                        <option value="juan">
+                            Juan
+                        </option>
+                        <option value="jostyn">
+                            Jostyn
+                        </option>
+                        <option value="mateo">
+                            Mateo
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="visitas">Visitas al mes</label><br>
+                        <input type="number" id="visitas" name="visitas"><br>
+                        <label for="cortes">Cortes realizados</label><br>
+                        <input type="number" id="cortes" name="cortes">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
