@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Vlzz | Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav id="menu" title="Menú de navegación">
+        <a href="index.html">Inicio</a>
+        <a href="personajes.html">Barberos</a>
+        <a href="misiones.html">Servicios</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="inscripcion.html">Reservas</a>
+    </nav>
+    <header id="cabecera" title="Reserva tu cita">
+        <h1>Reserva tu cita</h1>
+        <p>Llena el formulario y te esperamos</p>
+    </header>
+    <main id="contenido">
+        <form action="#" method="get" id="reserva">
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                <br><br>
+                <label for="correo">Correo:</label><br>
+                <input type="text" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                <br><br>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="text" id="telefono" name="telefono" placeholder="0991234567">
+                <br><br>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" min="5" max="99">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la cita</legend>
+                <label for="barbero">Barbero:</label><br>
+                <select id="barbero" name="barbero" required>
+                    <option value="">Selecciona un barbero</option>
+                    <option value="juan">Juan</option>
+                    <option value="jostyn">Jostyn</option>
+                    <option value="mateo">Mateo</option>
+                </select>
+                <br><br>
+                <label for="servicio">Servicio:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="fade">Fade</option>
+                    <option value="clasico">Corte clásico</option>
+                    <option value="diseno">Diseño con navaja</option>
+                    <option value="combo">Corte + barba</option>
+                </select>
+                <br><br>
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha" name="fecha" required>
+                <br><br>
+                <p>Turno:</p>
+                <input type="radio" id="manana" name="turno" value="manana" required>
+                <label for="manana">Mañana</label>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+                <p>Extras:</p>
+                <input type="checkbox" id="lavado" name="extras" value="lavado">
+                <label for="lavado">Lavado de cabello</label><br>
+                <input type="checkbox" id="cejas" name="extras" value="cejas">
+                <label for="cejas">Perfilado de cejas</label><br>
+                <input type="checkbox" id="toalla" name="extras" value="toalla">
+                <label for="toalla">Toalla caliente</label>
+            </fieldset>
+            <fieldset>
+                <legend>Detalles del corte</legend>
+                <label for="descripcion">Describe el corte que deseas:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="5" cols="45" maxlength="500" placeholder="Ej. fade bajo con la parte de arriba larga"></textarea>
+            </fieldset>
+            <button type="submit">Reservar cita</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+    <footer id="pie" title="Pie de página">
+        <p><small>2026 Barbería Vlzz. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>

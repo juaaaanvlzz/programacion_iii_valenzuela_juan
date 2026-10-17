@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(245, 238, 250);
+    color: rgb(45, 30, 60);
+    margin: 0px;
+}
+
+nav {
+    background-color: #957dad;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+}
+
+header {
+    background-color: rgb(205, 180, 219);
+    color: rgb(45, 30, 60);
+    text-align: center;
+    padding: 20px;
+}
+
+#portada {
+    background-image: url(../imagenes/corte2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    padding: 20px;
+}
+
+#portada h2 {
+    color: white;
+    background-color: rgb(149, 125, 173);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: rgb(106, 76, 147);
+}
+
+header h1 {
+    color: rgb(75, 45, 105);
+}
+
+section, article, aside {
+    background-color: white;
+    border: 2px solid rgb(205, 180, 219);
+    padding: 15px;
+    margin: 20px;
+}
+
+aside {
+    background-color: hsl(280, 60%, 92%);
+}
+
+.tarjeta {
+    width: 280px;
+    background-color: white;
+    border: 4px solid rgb(180, 150, 210);
+    padding: 15px;
+    margin: 20px;
+}
+
+.destacado {
+    color: rgb(106, 76, 147);
+}
+
+.precio {
+    color: #6a4c93;
+}
+
+table {
+    background-color: white;
+    border: 2px solid #957dad;
+    margin: 20px;
+}
+
+th {
+    background-color: rgb(149, 125, 173);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    padding: 10px;
+}
+
+fieldset {
+    background-color: white;
+    border: 2px solid rgb(205, 180, 219);
+    padding: 15px;
+    margin: 20px;
+}
+
+legend {
+    color: rgb(106, 76, 147);
+}
+
+button {
+    background-color: rgb(149, 125, 173);
+    color: white;
+    border: 2px solid rgb(106, 76, 147);
+    padding: 10px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #957dad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
