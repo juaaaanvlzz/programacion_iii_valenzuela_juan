@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: black;
+}
+
+.barbero {
+    padding: 20px;
+    background-color: #8B4513;
+    border: 2px solid #D4A017;
+}
+
+.equipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.area {
+    padding: 30px;
+    background-color: #B22222;
+    border: 2px solid #D4A017;
+    text-align: center;
+}
+
+.areas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.local div {
+    padding: 30px;
+    background-color: #B22222;
+    border: 2px solid #D4A017;
+    text-align: center;
+}
+
+.local {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    color: white;
+    background-color: black;
+}
+
+.productos div {
+    padding: 30px;
+    background-color: #1E40AF;
+    border: 2px solid #D4A017;
+    text-align: center;
+}
+
+.equipo2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.herramientas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.herramientas div {
+    padding: 30px;
+    background-color: rgb(139, 69, 19);
+    border: 2px solid rgb(212, 160, 23);
+    text-align: center;
+}
+
+.cortes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.cortes div {
+    padding: 30px;
+    background-color: rgb(178, 34, 34);
+    border: 2px solid rgb(212, 160, 23);
+    text-align: center;
+}
+
+.destacado {
+    grid-column: span 3;
+    padding: 30px;
+    background-color: rgb(30, 64, 175) !important;
+    border: 2px solid rgb(212, 160, 23);
+    text-align: center;
+}
