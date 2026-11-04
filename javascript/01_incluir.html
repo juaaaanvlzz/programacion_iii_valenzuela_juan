@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduccion a Javascript</title>
+    <title>Introduccion a javascript</title>
     <script>
-        alert('Corre, Morty! al Inicio de la Pagina');
-        console.log('Saludo desde el Inicio de pagina');
+        alert('!Corre, Morty¡ al Inicio de la Pagina');
+        console.log('Saludo desde el Inicio de la Pagina');
     </script>
 </head>
+
 <body>
-    <h1>Incluir Javascript en documento HTML</h1>
+    <h1>Incluir Javasript en documentos HTML</h1>
     <h2>Modo Inline</h2>
-    <button onclick="alert('!Corre, Morty!')">
+    <button onclick="alert('!Corre, Morty¡')">
         Mostrar Mensaje
     </button>
-    <input type="text"
-        oninput="console.log(this.value)"
-        placeholder="Escribe algo...">
+    <input type="text" oninput="console.log(this.value)" placeholder="Escribe bro">
 
-    <input type="text"
-    onchange="console.log('Valor final guardado:', this.value)"
-    placeholder="Escribe y haz clic fuera...">
-
-    <input type="text"
-    onfocus="console.log('El usuario esta escribiendo aqui')"
-    onblur="alert('¡Atencion! Saliste del campo')"
-    placeholder="Haz clic dentro y fuera...">
-
+    <input type="text" onfocus="console.log('Valor final guardado:',this.value)"
+        placeholder="Escribe y haz clic fuera..">
+    <input type="text" onfocus="console.log('El usuario esta escribiendo aqui..')"
+        onblur="alert('Atencion saliste del campo')" placeholder="Haz clic dentro y fuera...">
     <script src="01_incluir.js"></script>
+
+
 </body>
+
 </html>
-    

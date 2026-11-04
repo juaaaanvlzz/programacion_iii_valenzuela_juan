@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Vlzz | Introducción a JavaScript</title>
+    <script>
+        alert('¡Bienvenido a Barbería Vlzz! al inicio de la página');
+        console.log('Saludo desde el inicio de la página');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en documentos HTML</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('¡Tu cita fue reservada!')">
+        Reservar Cita
+    </button>
+
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe tu nombre...">
+
+    <input type="text"
+        onchange="console.log('Corte elegido:', this.value)"
+        placeholder="Escribe tu corte y haz clic fuera...">
+
+    <input type="text"
+        onfocus="console.log('El cliente está escribiendo aquí')"
+        onblur="alert('¡Atención! Saliste del campo')"
+        placeholder="Haz clic dentro y fuera...">
+
+    <script src="01_incluir_mp_valenzuela_juan.js"></script>
+</body>
+</html>
