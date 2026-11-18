@@ -80,5 +80,3 @@ function misionesExitosas(cristales) {
 }
 let totalExitosas = misionesExitosas(recoleccionCristales);
 console.log("El total de misiones exitosas es: " + totalExitosas);
-
-let 

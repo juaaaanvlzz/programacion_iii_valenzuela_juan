@@ -47,12 +47,6 @@ for (let propiedad in nave) {
     console.log(propiedad + ": " + nave[propiedad]);
 }
 
-let laboratorio = {
-    productoUno: 20,
-    productoDos: 30,
-    productoTres: 50
-}
-
 let unidad = 0;
 for(let productos in laboratorio) {
     unidad =+ productos

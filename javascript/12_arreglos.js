@@ -21,4 +21,11 @@ personajaes[1] = "Morty Smith";
 personajaes[2] = "Summer Smith";
 personajaes[3] = "Juan Valenzuela";
 personajaes[4] = "Valenzuela Esteban";
+
+personajaes.unshift("Rick Sanchez");
+personajaes[5] = "Morty Smith";
 console.log("personajes: " + personajaes);
+
+console.log("eliminar elementos de un arreglo con pop");
+personajaes.pop();
+personajaes.shift();("personajes: " + personajaes);
