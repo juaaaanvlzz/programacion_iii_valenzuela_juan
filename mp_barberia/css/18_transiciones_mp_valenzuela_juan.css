@@ -1,0 +1,151 @@
+body {
+    background-color: #1A1410;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #D4A017;
+}
+
+.boton-cita {
+    padding: 15px 25px;
+    background-color: #8B5A2B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-cita:hover {
+    background-color: #B91C1C;
+}
+
+.boton-cita:focus-visible {
+    background-color: #B91C1C;
+    outline: 3px solid #D4A017;
+    outline-offset: 4px;
+}
+
+.tarjeta {
+    width: 250px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #8B5A2B;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-property: background-color, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.tarjeta:hover {
+    background-color: #B91C1C;
+    transform: scale(1.5);
+}
+
+.estacion {
+    padding: 30px;
+    background-color: #2B211A;
+}
+
+.tijera {
+    width: 100px;
+    padding: 20px;
+    background-color: #8B5A2B;
+    transition: transform 0.5s ease;
+}
+
+.tijera:hover {
+    transform: translate(50px, -10px);
+}
+
+.reloj {
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #2B211A;
+    border: 3px solid #D4A017;
+    border-radius: 50%;
+}
+
+.aguja {
+    color: #D4A017;
+    font-size: 70px;
+    transition: transform 1s ease;
+}
+
+.aguja:hover {
+    transform: rotate(90deg);
+}
+
+.navaja {
+    width: 100px;
+    padding: 20px;
+    background-color: #8B5A2B;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navaja:hover {
+    transform: translateX(50px) rotate(15deg) scale(1.5);
+}
+
+.pasillo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2B211A;
+    overflow: hidden;
+}
+
+.poste {
+    width: 100px;
+    background-color: #8B5A2B;
+    text-align: center;
+    animation-name: recorrido;
+    animation-duration: 3s;
+}
+
+@keyframes recorrido {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(2000px);
+    }
+}
+
+.aviso {
+    width: 220px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #B91C1C;
+    color: white;
+    text-align: center;
+    animation-name: parpadeo;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
