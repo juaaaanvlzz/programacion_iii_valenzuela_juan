@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Vlzz | CRUD de Barberos</title>
+    <script src="06_crud_arreglo_mp_valenzuela_juan.js" defer></script>
+</head>
+<body>
+    <h1>Barbería Vlzz - Gestión de Barberos</h1>
+
+    <form id="formulario">
+        <label for="nombre">Nombre del barbero:</label>
+        <input type="text" id="nombre" placeholder="Escriba el nombre">
+
+        <label for="sucursal">Sucursal:</label>
+        <select id="sucursal">
+            <option value="Centro Norte">Centro Norte</option>
+            <option value="Sur">Sur</option>
+            <option value="Valle">Valle</option>
+        </select>
+
+        <label for="estado">Estado:</label>
+        <select id="estado">
+            <option value="Disponible">Disponible</option>
+            <option value="Ocupado">Ocupado</option>
+            <option value="En descanso">En descanso</option>
+        </select>
+
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar" hidden>Cancelar</button>
+    </form>
+
+    <h2>Barberos registrados: <span id="cantidad">0</span></h2>
+    <div id="contenedor"></div>
+</body>
+</html>
